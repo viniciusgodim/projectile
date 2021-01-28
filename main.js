@@ -1,6 +1,9 @@
 radius = 30;
 
 function main() {
+  if(!!document.getElementById('ball')){
+    document.body.removeChild(ball);
+  }
   ball = document.createElement('div');
   ball.style.position = 'absolute';
   ball.style.width = 2 * radius + 'px';
@@ -9,5 +12,6 @@ function main() {
   ball.style.left = 5/100*(window.innerWidth) - radius + 'px'
   ball.style.top = 95/100*(window.innerHeight) - radius + 'px'
   ball.style.backgroundColor = 'IndianRed'
+  ball.id = 'ball'
   document.body.appendChild(ball);
 }
