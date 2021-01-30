@@ -1,5 +1,6 @@
 body {
   background-color: FloralWhite;
+  font-family: "Ubuntu"
 }
 
 #mainContainer {
@@ -11,4 +12,13 @@ body {
   width: 90%;
   height: 90%;
   border: 1px solid black;
+}
+
+#anglePrint {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  font-size: 250%;
+  color: SlateGrey;
 }
